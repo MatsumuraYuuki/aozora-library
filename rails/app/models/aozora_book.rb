@@ -22,6 +22,7 @@ class AozoraBook < ApplicationRecord
 
     # allとは全レコードを表すActiveRecordリレーションを返すメソッドです allは self.all の省略　
     # all = AozoraBook テーブルの全レコード
+    # ActiveRecordの遅延評価を行っている
     query = all
 
     keywords.each do |keyword|
