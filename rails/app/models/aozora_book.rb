@@ -20,7 +20,8 @@ class AozoraBook < ApplicationRecord
     # スペースで分割
     keywords = keyword.split(/[\s　]+/)
 
-    # allとは全レコードを表すActiveRecordリレーションを返すメソッドです　all = AozoraBook テーブルの全レコード
+    # allとは全レコードを表すActiveRecordリレーションを返すメソッドです allは self.all の省略　
+    # all = AozoraBook テーブルの全レコード
     query = all
 
     keywords.each do |keyword|
